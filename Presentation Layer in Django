@@ -1,0 +1,21 @@
+“The presentation layer in Django is responsible for displaying data to users. It is mainly handled by Django templates, which render HTML pages using data provided by views.”
+
+8. Interview-Ready Answer (Detailed)
+
+“In Django, the presentation layer is mainly the Template layer. It handles how data is shown to the user but does not contain business logic. Views act as a bridge between models and templates by passing data to be displayed.”
+
+
+example :-  Another Real-World Example (ATM 🏧)
+
+Screen + buttons → Presentation layer
+
+Backend banking system → Business logic
+
+ATM controller → View
+
+User:
+
+Sees balance
+
+Presses buttons
+Doesn’t know how bank processes transactions.
