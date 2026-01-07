@@ -1,0 +1,110 @@
+Simple Debugging Techniques in Python
+1️⃣ print() Statements (Most Common)
+print("Reached here")
+print(x)
+
+
+Used to:
+
+Check program flow
+
+See variable values
+
+2️⃣ Read Error Messages (Traceback)
+
+Always read from bottom to top
+
+Look for:
+
+Error type
+
+File name
+
+Line number
+
+Example:
+
+ZeroDivisionError: division by zero
+
+3️⃣ Use try–except
+try:
+    x = int(input())
+except ValueError:
+    print("Invalid input")
+
+
+Used to:
+
+Catch errors
+
+Prevent crashes
+
+Show friendly messages
+
+4️⃣ Python Debugger (pdb)
+import pdb
+pdb.set_trace()
+
+
+Used to:
+
+Pause code
+
+Step line by line
+
+Inspect variables
+
+5️⃣ Logging (Professional Way)
+import logging
+
+logging.basicConfig(level=logging.DEBUG)
+logging.debug("Debug message")
+
+
+Used in:
+
+Large projects
+
+Production debugging
+
+6️⃣ IDE Debugger (VS Code / PyCharm)
+
+Set breakpoints
+
+Step through code
+
+Watch variable values
+
+7️⃣ Unit Testing
+python -m unittest
+
+
+Used to:
+
+Find bugs early
+
+Validate logic
+
+8️⃣ Check Inputs
+print(type(value))
+
+
+Used to:
+
+Confirm correct data type
+
+Avoid logical errors
+
+9️⃣ Simplify Code
+
+Break large code into small parts
+
+Debug each part separately
+
+One-Line Summary 🧠
+
+Python debugging = print + traceback + debugger + logging
+
+Interview-Ready Answer
+
+“Debugging in Python involves identifying and fixing errors using print statements, reading tracebacks, using try-except blocks, debuggers like pdb, and logging.”
