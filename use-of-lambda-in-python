@@ -1,0 +1,108 @@
+A lambda function is a short function written in one line for quick use.
+
+Normal function:
+
+def add(a, b):
+    return a + b
+
+
+Same thing using lambda:
+
+add = lambda a, b: a + b
+
+
+Here:
+
+a, b → inputs
+
+: → “now do this”
+
+a + b → result
+
+2. Meaning of : in lambda
+
+Syntax:
+
+lambda arguments: expression
+
+
+The : means:
+
+“Take these inputs and return this expression”
+
+Example:
+
+square = lambda x: x * x
+
+
+This means:
+
+take x
+
+return x * x
+
+3. Why lambda is used
+
+Lambda is mainly used when:
+
+The function is very small
+
+You need it only once
+
+You want cleaner and shorter code
+
+4. Common real-life usage examples
+Example 1: With map()
+numbers = [1, 2, 3, 4]
+
+result = list(map(lambda x: x * 2, numbers))
+print(result)
+
+
+Output:
+
+[2, 4, 6, 8]
+
+Example 2: With filter()
+numbers = [1, 2, 3, 4, 5, 6]
+
+even_numbers = list(filter(lambda x: x % 2 == 0, numbers))
+print(even_numbers)
+
+
+Output:
+
+[2, 4, 6]
+
+Example 3: With sorted()
+students = [("Ali", 80), ("Sara", 95), ("Aman", 70)]
+
+sorted_students = sorted(students, key=lambda x: x[1])
+print(sorted_students)
+
+
+Sorts by marks.
+
+5. When NOT to use lambda
+
+Do not use lambda when:
+
+Logic is complex
+
+Multiple lines are needed
+
+Readability becomes poor
+
+Bad use:
+
+lambda x: x*x + x/2 - x**3
+
+
+Better:
+
+def calculate(x):
+    return x*x + x/2 - x**3
+
+6. One-line summary
+
+Lambda is used to write small, quick, one-line functions, and : separates inputs from the expression.
